@@ -1,0 +1,28 @@
+
+<form [formGroup]="formulariocontacto" (ngSubmit)="enviarInfo()">
+    <div class="mb-3">
+      <div class="row" id="titulito">
+        <label for="" class="form-label"><h4>CONTACTENOS</h4></label>
+      </div>
+      <div class="row">
+          <div class="col-6">
+              <input type="text" class="form-control-sm" formControlName="nombreyapellido" name="nombreyapellido" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Nombre y Apellido</small>
+              <input type="text" class="form-control-sm" formControlName="compania" name="compania" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Empresa</small><br>
+              <input type="text" class="form-control-sm" formControlName="cargo" name="cargo" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Cargo</small><br>
+              <input type="text" class="form-control-sm" formControlName="telefono" name="telefono" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Teléfono</small><br>
+              <input type="email" class="form-control-lg" formControlName="correo" name="email" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Correo</small>
+          </div>
+          <div class="col-6">
+              Su consulta<br>
+              <input type="text" formControlName="consulta" name="comentario" id="consulta"><br><br>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+      </div>
+    </div>
+</form> 
+
