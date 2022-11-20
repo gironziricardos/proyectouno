@@ -1,0 +1,21 @@
+
+<form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()">
+    <div class="mb-3">
+      <div class="row" id="titulito">
+        <label for="" class="form-label">AGREGAR EMPLEADO</label>
+      </div>
+      <div class="row">
+              <input type="text" class="form-control-sm" formControlName="id" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Ingresar id</small>
+              <input type="text" class="form-control-sm" formControlName="nombre" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Ingresar nombre</small><br>
+              <input type="email" class="form-control-lg" formControlName="correo" name="" id="" aria-describedby="helpId" placeholder="">
+              <small id="helpId" class="form-text text-muted">Ingrese correo</small>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </form> 
+  
+  
+  
+  

@@ -13,6 +13,7 @@ import { NgForm } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { FilacuatroComponent } from './filacuatro/filacuatro.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
+import { EmpleadosComponent } from './empleados/empleados.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { QuienessomosComponent } from './quienessomos/quienessomos.component';
     FormcontactoComponent,
     InicioComponent,
     FilacuatroComponent,
-    QuienessomosComponent
+    QuienessomosComponent,
+    EmpleadosComponent
   ],
   imports: [
     BrowserModule,
