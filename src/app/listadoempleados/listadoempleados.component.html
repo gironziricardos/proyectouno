@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="table-responsive-xl">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th></th>
+
+                    <th scope="col">nombre</th>
+                    <th></th>
+                    <th scope="col">email</th>
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr  *ngFor="let empleado of Empleados; let iControl=index">
+                    <td scope="row">{{ empleado.id}}</td>
+                    <td></td>
+                    <td>{{ empleado.nombre}}</td>
+                    <td></td>
+                    <td>{{ empleado.correo}}</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

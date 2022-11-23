@@ -10,6 +10,7 @@ import { CrudempleadosService } from '../servicios/crudempleados.service';
 export class EmpleadosComponent implements OnInit {
   formularioempleado: FormGroup;
   
+  
   constructor(
     public formulario: FormBuilder,
     private servicio: CrudempleadosService
@@ -30,8 +31,8 @@ export class EmpleadosComponent implements OnInit {
     console.log("hola");
     console.log(this.formularioempleado.value);
     this.servicio.agregarEmpleado(this.formularioempleado.value).subscribe();
-  }
-
+    }
 }
+
 
 

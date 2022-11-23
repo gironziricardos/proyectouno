@@ -14,6 +14,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { FilacuatroComponent } from './filacuatro/filacuatro.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
+import { ListadoempleadosComponent } from './listadoempleados/listadoempleados.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EmpleadosComponent } from './empleados/empleados.component';
     InicioComponent,
     FilacuatroComponent,
     QuienessomosComponent,
-    EmpleadosComponent
+    EmpleadosComponent,
+    ListadoempleadosComponent
   ],
   imports: [
     BrowserModule,
