@@ -19,7 +19,21 @@ export class ListadoempleadosComponent implements OnInit {
     this.servicio.consultarEmpleado().subscribe(respuesta=>{
       console.log(respuesta);
       this.Empleados=respuesta;
-      })
+      });
   }
 
+  borradoRegistro(id:any,iControl:any){
+    console.log(id);
+    console.log(iControl);
+
+    if(window.confirm("Esta seguro de eliminar este registro?")){
+      this.servicio.borradoRegistro(id).subscribe(
+        (respuesta)=>{
+          console.log(respuesta);
+          this.Empleados.splice(iControl,1);
+        }
+        
+      );
+    }
+  }
 }

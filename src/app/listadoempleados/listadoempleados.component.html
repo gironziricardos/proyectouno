@@ -20,7 +20,8 @@
                     <td>{{ empleado.nombre}}</td>
                     <td></td>
                     <td>{{ empleado.correo}}</td>
-                    <td></td>
+                    <td><a class="btn btn-primary" routerLink="/edicion/{{empleado.id}}">Editar</a>
+                        <a class="btn btn-danger" (click)="borradoRegistro(empleado.id,iControl)" role="button">Borrar</a></td>
                 </tr>
             </tbody>
         </table>

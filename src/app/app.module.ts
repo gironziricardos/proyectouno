@@ -15,6 +15,7 @@ import { FilacuatroComponent } from './filacuatro/filacuatro.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { ListadoempleadosComponent } from './listadoempleados/listadoempleados.component';
+import { EdicionComponent } from './edicion/edicion.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ListadoempleadosComponent } from './listadoempleados/listadoempleados.c
     FilacuatroComponent,
     QuienessomosComponent,
     EmpleadosComponent,
-    ListadoempleadosComponent
+    ListadoempleadosComponent,
+    EdicionComponent
   ],
   imports: [
     BrowserModule,
