@@ -31,7 +31,7 @@ export class EdicionComponent implements OnInit {
         console.log(respuesta);
         this.formularioempleado.setValue(
           {
-            elID: respuesta
+           elID:respuesta
           }
         );
       }
